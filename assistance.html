@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistance</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        
+        height: 100vh;
+        color: #ffffff;
+    }
+    gradio-app {
+        width: 100%;
+        height: 100vh;
+        display: block;
+        justify-content: center;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #000000;
+        padding: 10px 0;
+    }
+
+    nav{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    nav button {
+        background-color: #ff5f03;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+<nav>
+   <a href="index.html"><button>back to home</button></a>
+</nav>
+
+    <script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.27.0/gradio.js"
+></script>
+
+<gradio-app src="https://kalpesh885-jarvis.hf.space"></gradio-app>
+<footer>
+    <p style="text-align: center; color: #ffffff;">Powered by Gradio</p>
+    <p style="text-align: center; color: #ffffff;">&copy; this ai agent is created using gemini api <a href="https://gemini.ai">Gemini</a></p>
+</footer>
+
+</body>
+</html>

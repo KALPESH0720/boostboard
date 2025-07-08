@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="/style/todo.css">
+</head>
+<body>
+    <div class="add">
+         <h1>Your Todo List</h1>
+         <div>
+        <button class="addTaskBtn">Add Task</button>
+        <button onclick="location.href='index.html'">back to home</button>
+    </div>
+    </div>
+
+<div class="addtodo hide">
+    <input type="date" id="date" name="date">
+    <input type="text" id="task" name="task" placeholder="Enter Title">
+    <textarea id="description" name="description" placeholder="Enter Description"></textarea>
+    <button id="addTodobt">Add Todo</button>
+</div>
+    <div class="todos">
+      
+    </div>
+
+    <script src="/script/todo.js"></script>
+</body>
+</html>

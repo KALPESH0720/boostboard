@@ -1,0 +1,239 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffea;
+}
+
+nav{
+background-image: linear-gradient( 90deg,  rgba(218,255,234,1) 5.3%, rgba(232,255,231,1) 11.6%, rgba(240,255,233,1) 17.4%, rgba(243,255,226,1) 22.9%, rgba(253,255,228,1) 28.5%, rgba(255,248,225,1) 33.9%, rgba(255,241,229,1) 39.4%, rgba(255,228,222,1) 44.8%, rgba(255,231,231,1) 50.3%, rgba(255,231,243,1) 56.9%, rgba(255,229,255,1) 63.2%, rgba(245,228,255,1) 69.1%, rgba(236,228,255,1) 74.7%, rgba(231,238,255,1) 80.4%, rgba(229,249,255,1) 85.8%, rgba(231,255,250,1) 90.6%, rgba(229,255,243,1) 94.4%, rgba(220,255,228,1) 98.3% );
+    color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+nav .logo{
+    width: 80px;
+    height: 70px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+nav ul li{
+    display: inline;
+}
+nav ul img{
+    width: 50px;
+    height: 50px;
+}
+
+.ptitle{
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+.ptitle h5{
+    font-weight: 50;
+}
+
+.container{
+  height: 150px;
+  width: 400px;
+  border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d7f9f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px;
+
+   
+}
+
+.performance-container{
+    
+    display: inline-flex;
+    flex-direction: row;
+justify-content: space-between;
+gap: 20px;
+align-items: center;
+padding: 10px 10px;
+}
+
+.performance-container h2{
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.performance-container h3{
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.container1{
+  height: 150px;
+  width: 400px;
+  border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6e6ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     margin: 20px 20px;
+}
+.container2{
+  height: 150px;
+  width: 400px;
+  border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5d4ef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     margin: 20px 20px;
+}
+
+.timeline-schedule {
+  margin-top: 40px;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 60px repeat(7, 1fr);
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.time-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 5px;
+  background: #f0f0f0;
+  font-size: 12px;
+}
+
+.day-column {
+  position: relative;
+  border-left: 1px solid #eee;
+  height: 240px; /* 6 hours x 40px per hour */
+  padding-top: 20px;
+}
+
+.day-name {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.day-column.active {
+  background: #e3f2fd;
+}
+
+.event {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  background: #42a5f5;
+  color: white;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.op{
+  display: inline-flex;
+  gap: 50px;
+}
+
+
+.activity-log{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.schedule-container {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 360px;
+      padding: 1.5rem;
+      justify-content: center;
+    }
+
+    .schedule-header {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .task {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f0f2f5;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      transition: background 0.3s;
+    }
+
+    .task:hover {
+      background: #e0e4ea;
+    }
+
+    .task-time {
+      font-weight: 500;
+      color: #333;
+    }
+
+    .task-desc {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .see-all {
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+      color: #0078d4;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .see-all:hover {
+      text-decoration: underline;
+    }
+
+
+    footer {
+      background-color: #000000;
+      padding: 20px 20px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      
+      color: #fff;
+    }

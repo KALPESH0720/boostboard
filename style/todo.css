@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+.todos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+
+}
+.todos{
+    width: 100%;
+    background-color: #ffd380;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px 20px;
+    margin: 20px 20px;
+
+
+
+}
+
+.todos button{
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.todos button:hover{
+   
+    background-color: #e07b00;
+}
+.todos h2{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.todos p{
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.todos .todo-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.add h1{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.add button{
+    background-color: #f3740c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.add button:hover{
+    background-color: #e07b00;
+}
+
+.addtodo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdffb6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px 20px;
+    width: 100%;
+}
+.addtodo input,
+.addtodo textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.addtodo button {
+    background-color: #f3740c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.addtodo button:hover {
+    background-color: #e07b00;
+}
+
+.addtodo h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.addtodo.hide {
+    display: none;
+}
+
+.filter-btn {
+    background-color: #f3740c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
